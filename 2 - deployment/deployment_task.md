@@ -12,7 +12,8 @@ nginx-deployment-7cbbccf745   2         2         2       16m   app.kubernetes.i
 __Task 2, step 7: what command did you use to scale the deployment?__
 
 ```
-enter command here
+kubectl get rs --show-labels
+
 ```
 
 __Task 3, step 2: Why are there two replica sets but only one deployment?__
