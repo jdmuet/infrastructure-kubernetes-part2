@@ -4,7 +4,9 @@ __Task 2, step 6: After completing step 5 of task 2, what do you notice about th
 hint: use ` kubectcl get rs --show-labels`
 
 ```
-enter answer here
+It's given a unique indicator.
+nginx-deployment-7cbbccf745   2         2         2       16m   app.kubernetes.io/version=1.0,app_name=nginx,env=dev,pod-template-hash=7cbbccf745
+
 ```
 
 __Task 2, step 7: what command did you use to scale the deployment?__
