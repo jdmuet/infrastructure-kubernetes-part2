@@ -32,5 +32,5 @@ replicaset.apps/nginx-replica                 3         3         3       101m  
 __Task 3, step 6: What command did you use to roll back the deployment?__
 
 ```
-enter command here
+kubectl rollout undo deployment/nginx-deployment  --to-revision=1
 ```
