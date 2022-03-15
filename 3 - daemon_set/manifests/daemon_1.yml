@@ -15,7 +15,7 @@ spec:
         env: dev
     spec:
       nodeSelector: 
-        nodeType: health
+        nodeType: 'health'
       containers:
       - name: nginx
         image: nginx:stable-alpine
