@@ -10,7 +10,7 @@ spec:
       app_name: sts-nginx
   serviceName: nginx-sts
   updateStrategy:
-    type: OnDelete
+    type: RollingUpdate
   template:
     metadata:
       labels:
