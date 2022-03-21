@@ -19,13 +19,9 @@ kubectl scale --replicas=3 -f deployment_1.yml
 __Task 3, step 2: Why are there two replica sets but only one deployment?__
 
 ```
-AME                               READY   UP-TO-DATE   AVAILABLE   AGE   LABELS
-deployment.apps/nginx-deployment   3/3     3            3           47m   app.kubernetes.io/version=2.0
+The replica sets are there as we have a current version and a previous version. The deployment is still the same, and is used to manage the replica Sets.
 
-NAME                                          DESIRED   CURRENT   READY   AGE    LABELS
-replicaset.apps/nginx-deployment-7cbbccf745   3         3         3       47m    app.kubernetes.io/version=1.0,app_name=nginx,env=dev,pod-template-hash=7cbbccf745
-replicaset.apps/nginx-replica                 3         3         3       101m   <none>
-[dmuetzel1@WFIL204 manifests]$ 
+
 
 ```
 
