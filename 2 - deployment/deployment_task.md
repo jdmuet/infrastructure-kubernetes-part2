@@ -4,23 +4,29 @@ __Task 2, step 6: After completing step 5 of task 2, what do you notice about th
 hint: use ` kubectcl get rs --show-labels`
 
 ```
-enter answer here
+It's given a pod-template-hash number. This is provides the ability to move between versions 
+nginx-deployment-7cbbccf745   2         2         2       16m   app.kubernetes.io/version=1.0,app_name=nginx,env=dev,pod-template-hash=7cbbccf745
+
 ```
 
 __Task 2, step 7: what command did you use to scale the deployment?__
 
 ```
-enter command here
+kubectl scale --replicas=3 -f deployment_1.yml
+
 ```
 
 __Task 3, step 2: Why are there two replica sets but only one deployment?__
 
 ```
-enter answer here
+The replica sets are there as we have a current version and a previous version. The deployment is still the same, and is used to manage the replica Sets.
+
+
+
 ```
 
 __Task 3, step 6: What command did you use to roll back the deployment?__
 
 ```
-enter command here
+kubectl rollout undo deployment/nginx-deployment  --to-revision=1
 ```
