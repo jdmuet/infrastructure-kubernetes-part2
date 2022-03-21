@@ -10,5 +10,5 @@ __Task 6, step 2: How many jobs run? How many run at the same time?__
 __Task 6, step 5: What you observe when running the CronJob?__
 
 ```
-enter answer here
+The cron job has a unique identifier per job as well as an identifier per pod. Ran 8 jobs, running 2 at a time. 
 ```
