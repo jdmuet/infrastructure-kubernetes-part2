@@ -8,6 +8,7 @@ Created three pods, pvc and pv for them
 
 __Task 5, step 4: Did anything change? Why or why not?__
 
+...
 Nothing changed because the UpdateStrategy was set to OnDelete, so the pod would need to be deleted before the next version was started.
 ```
 
