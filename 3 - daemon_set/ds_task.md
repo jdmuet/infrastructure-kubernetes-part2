@@ -14,7 +14,7 @@ nginx-ds   0         0         0       0            0           nodeType=health 
 __Task 4, step 7: What happened when you labeled the node and why?__
 
 ```
-once the label was added, the ds became active
+once the label was added, the ds was found because the node selector on the ds matched the selector on label on the node.
 NAME       DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR     AGE
 nginx-ds   1         1         1       1            1           nodeType=health   2m42s
 
