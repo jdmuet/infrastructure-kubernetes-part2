@@ -3,7 +3,7 @@
 __Task 5, step 3: Describe what happened and what you noticed about the pods and the volumes for them.__
 
 ```
-enter answer here
+Created three pods, pvc and pv for them 
 ```
 
 __Task 5, step 4: Did anything change? Why or why not?__
